@@ -7,7 +7,7 @@
   <version>1.0.0</version>
   <packaging>kjar</packaging>
   <name>DemoProcessInquiryModel</name>
-  <description>DemoProcessInquiryModel</description>
+  <description>This is a Particular Demo for Process Inquiry Model</description>
   <dependencies>
     <dependency>
       <groupId>org.kie</groupId>
