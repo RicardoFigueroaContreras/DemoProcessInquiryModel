@@ -8,19 +8,17 @@ public class CustomerTypeInquiry implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "country")
+	@org.kie.api.definition.type.Label("country")
 	private java.lang.String country;
-	@org.kie.api.definition.type.Label(value = "city")
+	@org.kie.api.definition.type.Label("city")
 	private java.lang.String city;
-	@org.kie.api.definition.type.Label(value = "channel")
+	@org.kie.api.definition.type.Label("channel")
 	private java.lang.String channel;
-	@org.kie.api.definition.type.Label(value = "campaignId")
+	@org.kie.api.definition.type.Label("campaignId")
 	private java.lang.String campaignId;
-	@org.kie.api.definition.type.Label(value = "productCount")
+	@org.kie.api.definition.type.Label("productCount")
 	private java.lang.Integer productCount;
-	@org.kie.api.definition.type.Label(value = "productYearCount")
-	private java.lang.Integer productYearCount;
-	@org.kie.api.definition.type.Label(value = "customerType")
+	@org.kie.api.definition.type.Label("customerType")
 	private java.lang.String customerType;
 
 	public CustomerTypeInquiry() {
@@ -66,14 +64,6 @@ public class CustomerTypeInquiry implements java.io.Serializable {
 		this.productCount = productCount;
 	}
 
-	public java.lang.Integer getProductYearCount() {
-		return this.productYearCount;
-	}
-
-	public void setProductYearCount(java.lang.Integer productYearCount) {
-		this.productYearCount = productYearCount;
-	}
-
 	public java.lang.String getCustomerType() {
 		return this.customerType;
 	}
@@ -84,14 +74,12 @@ public class CustomerTypeInquiry implements java.io.Serializable {
 
 	public CustomerTypeInquiry(java.lang.String country, java.lang.String city,
 			java.lang.String channel, java.lang.String campaignId,
-			java.lang.Integer productCount, java.lang.Integer productYearCount,
-			java.lang.String customerType) {
+			java.lang.Integer productCount, java.lang.String customerType) {
 		this.country = country;
 		this.city = city;
 		this.channel = channel;
 		this.campaignId = campaignId;
 		this.productCount = productCount;
-		this.productYearCount = productYearCount;
 		this.customerType = customerType;
 	}
 
