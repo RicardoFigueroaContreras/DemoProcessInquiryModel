@@ -6,12 +6,61 @@ package com.myspace.process.inquiry.model;
 
 public class CustomerScoreCardInquiry implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CustomerScoreCardInquiry() {
-    }
+	@org.kie.api.definition.type.Label(value = "sourceName")
+	private java.lang.String sourceName;
+	@org.kie.api.definition.type.Label(value = "variableName")
+	private java.lang.String variableName;
+	@org.kie.api.definition.type.Label(value = "variableNameScorePoint")
+	private java.lang.Integer variableNameScorePoint;
+	@org.kie.api.definition.type.Label(value = "variableNameValue")
+	private java.lang.Integer variableNameValue;
 
+	public CustomerScoreCardInquiry() {
+	}
 
+	public java.lang.String getSourceName() {
+		return this.sourceName;
+	}
 
+	public void setSourceName(java.lang.String sourceName) {
+		this.sourceName = sourceName;
+	}
+
+	public java.lang.String getVariableName() {
+		return this.variableName;
+	}
+
+	public void setVariableName(java.lang.String variableName) {
+		this.variableName = variableName;
+	}
+
+	public java.lang.Integer getVariableNameScorePoint() {
+		return this.variableNameScorePoint;
+	}
+
+	public void setVariableNameScorePoint(
+			java.lang.Integer variableNameScorePoint) {
+		this.variableNameScorePoint = variableNameScorePoint;
+	}
+
+	public java.lang.Integer getVariableNameValue() {
+		return this.variableNameValue;
+	}
+
+	public void setVariableNameValue(java.lang.Integer variableNameValue) {
+		this.variableNameValue = variableNameValue;
+	}
+
+	public CustomerScoreCardInquiry(java.lang.String sourceName,
+			java.lang.String variableName,
+			java.lang.Integer variableNameScorePoint,
+			java.lang.Integer variableNameValue) {
+		this.sourceName = sourceName;
+		this.variableName = variableName;
+		this.variableNameScorePoint = variableNameScorePoint;
+		this.variableNameValue = variableNameValue;
+	}
 
 }
