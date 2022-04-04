@@ -55,6 +55,11 @@
       <artifactId>script-executor</artifactId>
       <version>1.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>com.s4bps.workitems</groupId>
+      <artifactId>rule-invoker</artifactId>
+      <version>1.0.0</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
