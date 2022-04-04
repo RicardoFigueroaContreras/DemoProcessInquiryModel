@@ -1,0 +1,23 @@
+[
+        [
+            "name" : "ScriptExecutorDefinitions",
+            "displayName" : "ScriptExecutorDefinitions",
+            "category" : "script-executor",
+            "description" : "",
+            "defaultHandler" : "mvel: new com.s4bps.workitem.ScriptExecutorWorkItemHandler()",
+            "documentation" : "script-executor/index.html",
+
+            "parameters" : [
+                                "configKey" : new StringDataType()
+                ,"configGlobal" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "com.s4bps.workitem:script-executor:1.0.0"
+
+            ],
+            "icon" : "ScriptExecutorDefinitions.png"
+
+        ]
+
+]
