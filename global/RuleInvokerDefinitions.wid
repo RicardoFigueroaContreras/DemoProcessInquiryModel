@@ -1,0 +1,29 @@
+[
+        [
+            "name" : "RuleInvokerDefinitions",
+            "displayName" : "RuleInvoker",
+            "category" : "rule-invoker",
+            "description" : "",
+            "defaultHandler" : "mvel: new com.s4bps.workitems.RuleInvokerWorkItemHandler()",
+            "documentation" : "rule-invoker/index.html",
+
+            "parameters" : [
+                                "inputBaseObject" : new StringDataType()
+                ,"outputKeyName" : new StringDataType()
+                ,"groupId" : new StringDataType()
+                ,"artifactId" : new StringDataType()
+                ,"inputType" : new StringDataType()
+                ,"containerId" : new StringDataType()
+                ,"version" : new StringDataType()
+                ,"inputKeyName" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "com.s4bps.workitems:rule-invoker:1.0.0"
+
+            ],
+            "icon" : "RuleInvokerDefinitions.png"
+
+        ]
+
+]
