@@ -50,6 +50,11 @@
       <artifactId>service-invoker</artifactId>
       <version>1.0.0</version>
     </dependency>
+    <dependency>
+      <groupId>com.s4bps.workitem</groupId>
+      <artifactId>script-executor</artifactId>
+      <version>1.0.0</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
