@@ -1,0 +1,25 @@
+[
+        [
+            "name" : "ServiceInvokerDefinitions",
+            "displayName" : "ServiceInvokerDefinitions",
+            "category" : "service-invoker",
+            "description" : "",
+            "defaultHandler" : "mvel: new com.s4bps.workitem.ServiceInvokerWorkItemHandler()",
+            "documentation" : "service-invoker/index.html",
+
+            "parameters" : [
+                                "configKey" : new StringDataType()
+                ,"serviceSoapHeader" : new StringDataType()
+                ,"serviceRequest" : new StringDataType()
+                ,"configGlobal" : new StringDataType()
+
+            ],
+            "mavenDependencies" : [
+                                 "com.s4bps.workitem:service-invoker:1.0.0"
+
+            ],
+            "icon" : "ServiceInvokerDefinitions.png"
+
+        ]
+
+]
