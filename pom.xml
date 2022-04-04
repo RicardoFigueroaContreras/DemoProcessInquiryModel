@@ -45,6 +45,11 @@
       <version>1.4.18</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.s4bps.workitem</groupId>
+      <artifactId>service-invoker</artifactId>
+      <version>1.0.0</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
