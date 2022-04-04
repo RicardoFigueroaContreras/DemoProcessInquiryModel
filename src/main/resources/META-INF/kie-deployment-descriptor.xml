@@ -12,13 +12,13 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.s4bps.workitem.ServiceInvokerWorkItemHandler("", "", "", "")</identifier>
+            <identifier>new com.s4bps.workitem.ServiceInvokerWorkItemHandler()</identifier>
             <parameters/>
             <name>ServiceInvokerDefinitions</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new com.s4bps.workitem.ScriptExecutorWorkItemHandler("", "")</identifier>
+            <identifier>new com.s4bps.workitem.ScriptExecutorWorkItemHandler()</identifier>
             <parameters/>
             <name>ScriptExecutorDefinitions</name>
         </work-item-handler>
