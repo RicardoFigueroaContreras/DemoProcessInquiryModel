@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>DemoProcessInquiryModel</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>kjar</packaging>
   <name>DemoProcessInquiryModel</name>
   <description>This is a Particular Demo for Process Inquiry Model</description>
