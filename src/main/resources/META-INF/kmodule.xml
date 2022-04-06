@@ -1,1 +1,35 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    <kbase name="KBase11" default="true" eventProcessingMode="cloud" equalsBehavior="equality" declarativeAgenda="enabled" packages="*">
+        <ksession name="KSession11_1" type="stateful" default="true"/>
+        <ksession name="KSession11_2" type="stateless" default="false" beliefSystem="jtms"/>
+    </kbase>
+
+    <kbase name="KBase21" default="false" eventProcessingMode="stream" equalsBehavior="equality" declarativeAgenda="enabled" packages="*" includes="KBase11">
+        <ksession name="KSession21_1" type="stateful" default="false" clockType="realtime">
+            <fileLogger file="drools.log" threaded="true" interval="10"/>
+            <workItemHandlers>
+
+                <!--<workItemHandler name="Java" type="new org.jbpm.process.workitem.handler.JavaHandlerWorkItemHandler(ksession)"/>-->
+                    <!--<workItemHandler name="Java" type="org.jbpm.process.workitem.handler.JavaHandlerWorkItemHandler"/>-->
+                    <!--<workItemHandler name="Send Task" type="org.jbpm.bpmn2.handler.SendTaskHandler"/>-->
+                    <workItemHandler name="RuleInvokerDefinitions" type="com.s4bps.workitems.RuleInvokerWorkItemHandler"/>
+                    <workItemHandler name="ServiceInvokerDefinitions" type="com.s4bps.workitem.ServiceInvokerWorkItemHandler"/>
+                    <workItemHandler name="ScriptExecutorDefinitions" type="com.s4bps.workitem.ScriptExecutorWorkItemHandler"/>
+
+                <!--<workItemHandler name="BusinessRuleTask" type="org.jbpm.process.workitem.bpmn2.BusinessRuleTaskHandler"/>-->
+                <!--<workItemHandler name="RemoteRuleInvokerWorkItemDefinitions" type="com.s4bps.workitem.RemoteRuleInvokerWorkItemWorkItemHandler"/>-->
+
+
+            </workItemHandlers>
+
+            <listeners>
+
+            </listeners>
+
+        </ksession>
+
+    </kbase>
+
+</kmodule>
